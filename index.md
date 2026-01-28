@@ -4,7 +4,7 @@ title: Home
 
 ## About
 
-I'm Nathan Murray. Welcome to my personal website where I share my thoughts, projects, and writing.
+I'm Nathan Murray. Welcome to my personal blog, where I write my thoughts about life and work.
 
 ---
 
