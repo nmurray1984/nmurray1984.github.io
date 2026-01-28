@@ -1,1 +1,22 @@
 # nathanmurray.github.io
+
+
+## Adding New Posts
+
+To add a new post, create a file in the `_posts` folder with the naming format:
+
+```
+YYYY-MM-DD-title-of-post.md
+```
+
+Each post needs frontmatter at the top:
+
+```yaml
+---
+layout: post
+title: "Your Post Title"
+date: YYYY-MM-DD
+---
+```
+
+Then write your content in Markdown below the frontmatter.

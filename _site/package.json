@@ -1,0 +1,10 @@
+{
+  "name": "nmurray1984.github.io",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "scripts": {
+    "dev": "bundle exec jekyll serve --livereload",
+    "build": "bundle exec jekyll build",
+    "install:deps": "bundle install"
+  }
+}

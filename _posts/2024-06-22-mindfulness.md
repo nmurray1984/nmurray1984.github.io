@@ -1,0 +1,13 @@
+---
+layout: "post"
+title: "Mindfulness"
+date: 2024-06-22
+---
+
+There are 3 hard things that you do when you are mindful - sit still with no distractions, bring your attention back when it is carried off, and suspend judgement of the thoughts and emotions that come in. I think it’s reasonable to assume that even though we don’t understand how mindfulness exactly works in the body, if you are doing the same hard things, you will gain the same benefits. Just like push ups and bench press are different exercises but working the same muscles. For each of these hard things prayer is either equal or greater in what is practiced. Jesus commands us to go into our closet and pray, with no distractions. It’s common for those to close their eyes when doing so. When praying for several minutes, it’s incredibly common to have to bring your attention back, just as you would in mindfulness. The difference here is that instead of bringing your attention back to your breath, you are bringing it back to your prayer. Does this difference matter? If the hard work is in bringing your attention back, and it becomes easy once your attention is back on something, I would posit that the benefits come not from what you are focusing on but rather the action of bringing attention back. 
+
+The third one is where prayer - Christian prayer - really separates itself. Instead of suspending judgement of yourself, in prayer to God you are submitting yourself to His judgement of you. You are laid bare in the silence and lack of distractions, alone in sin and shame. Your thoughts are called out as sinful and deserving of Gods wrath. But! You are washed clean by the blood of Jesus, his glorious cross. Your sins are wiped clean and forgiven! What a glorious thought and an incredible idea!
+
+In prayer you don’t encounter cosmic emptiness, but a Person, The Person, who loves you because of what he did for you. You have a Reason for suspending judgement, because He already has and as Paul says there is no comdemnation in Christ. We are free to be all of who we are, warts and all. The freedom can’t be found in other ways. And it’s a freedom that is incredibly motivating, awakening, and powerful. Not only after prayer do we have access to his peace that passes all understanding, we also have access to the His power to overcome and triumph. He is making all things new - including us. 
+
+The scientific benefits of mindfulness are clear. Let’s not divorce them from the true reality - that we were designed to talk to the God of the universe who give us grace and assurance. How much more powerful is that!

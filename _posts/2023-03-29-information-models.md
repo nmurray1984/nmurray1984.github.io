@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Information Models"
+date: 2023-03-29
+---
+
+Information models are physical systems that receive input and convert it to an output. Computer are the artificial example. In the human body there are also many examples, most poiniently the brain. What is fascinating about the information models in the brain is how the mimic reality. Each of us that can catch a ball have an information model in our brain that contain's Newton's laws of motion. How else would you're brain be able to predict where to move your hand and when to clasp the ball with such accuracy? This fact extends to anything else that you would predict. When you close your eyes and move your arms, you can internally visualize where all your body parts are. There is an information model in your brain that has a 3D representation of the positions of all your limbs. Otherwise, you wouldn't be able to take steps with your eyes closed. Astronauts find it difficult to move and navigate around the International Space Station their first few weeks aboard, because their internal information model of their body's position is a room assumes gravity creates down and up directions. Astronauts call it the brain "modifying itself for "3D" when new astronauts finally get it and can navigate and work in a ground-less and ceiling-less environment.
+
+The most fascinating point to me is how our brains contain information models of each other's brains. Whenever you know what someone is going to say and are right about it, it means that a model exists in your brain that is similar to the "real" model that exists in the other person's brain. And given that they are both information models in a physical system, it is very appropriate to say that two people are of "one mind" - it's practically the same thing! When someone else "gets you", its because they have a small part of you literally inside their brain.
+
+All of this means that those that are best at predicting what will happen, also have information models that most closely mimic reality.
