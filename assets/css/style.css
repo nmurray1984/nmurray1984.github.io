@@ -167,6 +167,54 @@ hr {
   margin: 2rem 0;
 }
 
+/* Post list */
+.post-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.post-list li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.post-list li:last-child {
+  border-bottom: none;
+}
+
+.post-list a {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.post-list time {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Post header */
+.post-header {
+  margin-bottom: 2rem;
+}
+
+.post-header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.post-header time {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+/* Post content */
+.post-content {
+  margin-top: 1.5rem;
+}
+
 /* Footer */
 footer {
   margin-top: auto;

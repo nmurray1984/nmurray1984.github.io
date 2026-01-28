@@ -8,6 +8,7 @@ baseurl: ""
 # Build settings
 markdown: kramdown
 highlighter: rouge
+permalink: /:title/
 
 # Plugins
 plugins:
@@ -27,3 +28,8 @@ defaults:
       path: ""
     values:
       layout: "default"
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
