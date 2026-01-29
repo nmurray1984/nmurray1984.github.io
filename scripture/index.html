@@ -1,0 +1,108 @@
+---
+layout: default
+title: Scripture Memorization
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scripture Memorization</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel">
+        const { useState } = React;
+
+        function ScriptureMemorizer() {
+          const passage = "In the beginning was the Word, and the Word was with God, and the Word was God. He was with God in the beginning. Through him all things were made; without him nothing was made that has been made. In him was life, and that life was the light of all mankind. The light shines in the darkness, and the darkness has not overcome it.";
+          
+          const reference = "John 1:1-5";
+          const words = passage.split(' ');
+          
+          const [currentIndex, setCurrentIndex] = useState(0);
+          
+          const showNextWord = () => {
+            if (currentIndex < words.length - 1) {
+              setCurrentIndex(currentIndex + 1);
+            }
+          };
+          
+          const startOver = () => {
+            setCurrentIndex(0);
+          };
+          
+          const progress = ((currentIndex + 1) / words.length * 100).toFixed(0);
+          
+          return (
+            <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-6">
+              <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-2xl w-full">
+                <div className="mb-6">
+                  <h1 className="text-3xl font-bold text-indigo-900 mb-2">Scripture Memorization</h1>
+                  <p className="text-indigo-600 font-semibold">{reference}</p>
+                </div>
+                
+                <div className="mb-6">
+                  <div className="w-full bg-gray-200 rounded-full h-2">
+                    <div 
+                      className="bg-indigo-600 h-2 rounded-full transition-all duration-300"
+                      style={{ width: `${progress}%` }}
+                    />
+                  </div>
+                  <p className="text-sm text-gray-600 mt-2 text-center">
+                    {currentIndex + 1} of {words.length} words ({progress}%)
+                  </p>
+                </div>
+                
+                <div className="bg-indigo-50 rounded-xl p-8 mb-6 min-h-[200px] flex items-center">
+                  <p className="text-2xl leading-relaxed text-gray-800">
+                    {words.slice(0, currentIndex + 1).map((word, index) => (
+                      <span 
+                        key={index}
+                        className={index === currentIndex ? "text-indigo-600 font-semibold" : ""}
+                      >
+                        {word}{' '}
+                      </span>
+                    ))}
+                  </p>
+                </div>
+                
+                <div className="flex gap-4">
+                  <button
+                    onClick={showNextWord}
+                    disabled={currentIndex === words.length - 1}
+                    className="flex-1 bg-indigo-600 text-white py-4 px-6 rounded-xl font-semibold text-lg hover:bg-indigo-700 transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed shadow-lg hover:shadow-xl"
+                  >
+                    {currentIndex === words.length - 1 ? 'Complete!' : 'Next Word →'}
+                  </button>
+                  
+                  <button
+                    onClick={startOver}
+                    className="flex-1 bg-gray-600 text-white py-4 px-6 rounded-xl font-semibold text-lg hover:bg-gray-700 transition-colors shadow-lg hover:shadow-xl"
+                  >
+                    ↺ Start Over
+                  </button>
+                </div>
+                
+                {currentIndex === words.length - 1 && (
+                  <div className="mt-6 p-4 bg-green-100 border-2 border-green-500 rounded-xl text-center">
+                    <p className="text-green-800 font-semibold text-lg">
+                      🎉 You've completed the passage! Ready to test yourself?
+                    </p>
+                  </div>
+                )}
+              </div>
+            </div>
+          );
+        }
+
+        ReactDOM.render(<ScriptureMemorizer />, document.getElementById('root'));
+    </script>
+</body>
+</html>
