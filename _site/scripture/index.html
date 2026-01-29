@@ -132,17 +132,37 @@
                   </p>
                 </div>
                 
-                <div className="bg-indigo-50 rounded-xl p-8 mb-6 min-h-[200px] flex items-center">
-                  <p className="text-lg md:text-xl leading-relaxed text-gray-800">
-                    {words.slice(0, currentIndex + 1).map((word, index) => (
-                      <span
-                        key={index}
-                        className={index === currentIndex ? "text-indigo-600 font-semibold" : ""}
-                      >
-                        {word}{' '}
-                      </span>
-                    ))}
-                  </p>
+                <div className="bg-indigo-50 rounded-xl p-8 mb-6 h-[200px] overflow-hidden relative">
+                  <div
+                    className="absolute bottom-0 left-0 right-0 p-8 transition-transform duration-300"
+                    style={{
+                      transform: (() => {
+                        // Create a temporary element to measure text height
+                        const tempDiv = document.createElement('div');
+                        tempDiv.style.cssText = 'position:absolute;visibility:hidden;width:100%;font-size:1.25rem;line-height:2rem;padding:0 2rem';
+                        tempDiv.innerHTML = words.slice(0, currentIndex + 1).join(' ');
+                        document.body.appendChild(tempDiv);
+                        const textHeight = tempDiv.offsetHeight;
+                        document.body.removeChild(tempDiv);
+
+                        // If text exceeds 5 lines (10rem = 160px), shift it up
+                        const maxHeight = 160; // 10rem in pixels
+                        const offset = Math.max(0, textHeight - maxHeight);
+                        return `translateY(-${offset}px)`;
+                      })()
+                    }}
+                  >
+                    <p className="text-lg md:text-xl leading-relaxed text-gray-800" style={{ lineHeight: '2rem' }}>
+                      {words.slice(0, currentIndex + 1).map((word, index) => (
+                        <span
+                          key={index}
+                          className={index === currentIndex ? "text-indigo-600 font-semibold" : ""}
+                        >
+                          {word}{' '}
+                        </span>
+                      ))}
+                    </p>
+                  </div>
                 </div>
                 
                 <div className="flex gap-4">
